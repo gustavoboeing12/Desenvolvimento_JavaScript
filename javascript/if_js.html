@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo javascript - Pula</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        //\n para pular linha
+         function funcao1(){
+          var x;
+          var r=confirm("Escolha um valor!");
+          if(r==true){
+            x="Você pressionou OK!";
+            document.getElementById("demo").innerHTML=x;
+          }
+          else{
+            x="Você pressionou cancelar!";
+            document.getElementById("demo").innerHTML=x;
+          }
+        }
+    </script>
+</head>
+<body>
+    <p>Clique no botão para exibit a caixa de confirmação.</p>
+    <Button onclick="funcao1()">Clique aqui</Button>
+    <p id="demo"></p>
+</body>
+</html>
