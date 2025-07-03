@@ -17,10 +17,10 @@ function captura_eventos(objeto, evento, funcao){
 
 //Função para cancelar eventos
 function cancela_evento(evento){
-    if(event.preventDefault){
-        event.preventDefault()
+    if(Event.preventDefault){
+        Event.preventDefault()
     } else{
-        window.event.returnValue = false;
+        window.Event.returnValue = false;
     }
 }
 
